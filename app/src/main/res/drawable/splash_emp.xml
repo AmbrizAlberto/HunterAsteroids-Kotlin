@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Poner color de fondo-->
+    <item android:drawable="@color/black"/>
+
+    <!--Poner imagen para splash y centrarla-->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/logoemp3"/>
+    </item>
+
+</layer-list>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.ejemplo.hunterasteroids.Pantallaplay">
+
+    <Button
+        android:id="@+id/showerButton"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:background="@drawable/flecha"
+        android:fontFamily="@font/amaranth_italic"
+        android:text="Lluvia de asteroides"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/asteroid"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="asteroid image"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/asteroide3"
+        tools:ignore="MissingConstraints,VectorDrawableCompat"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/showerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/fondo" />
+
+        <ImageView
+            android:id="@+id/imageNave"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="moving object"
+            android:layout_alignParentBottom="true"
+
+            android:src="@drawable/nave2"></ImageView>
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="14dp"
+            android:fontFamily="@font/amaranth_italic"
+            android:layout_marginBottom="95dp"
+            android:background="@drawable/flecha"
+            android:text="Volver" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
